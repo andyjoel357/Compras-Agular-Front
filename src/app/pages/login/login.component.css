@@ -1,0 +1,29 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+  }
+
+  .input-group-text {
+    width: 36px;
+    background-color: #f5f5f5;
+    border: none;
+    text-align: center;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }

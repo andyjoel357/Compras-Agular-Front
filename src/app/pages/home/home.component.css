@@ -1,0 +1,115 @@
+/* home.component.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+header{
+    text-align: center;
+}
+
+.hero {
+    background-color: #e8fdc7;
+    padding: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1em;
+}
+
+.hero h3 {
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    margin-bottom: 1em;
+}
+
+.hero a {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero a:hover {
+    background-color: #3e8e41;
+}
+
+.features {
+    margin-top: 2em;
+}
+
+.features h3 {
+    margin-bottom: 0.5em;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features li {
+    margin-bottom: 0.5em;
+}
+
+.features li:before {
+    content: "\2713";
+    margin-right: 0.5em;
+    color: #4CAF50;
+}
+
+h1{
+    background-color: antiquewhite;
+}
+/* styles.css */
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    clear: both; /* Add this to ensure the footer clears any floats */
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .footer-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-container li {
+    margin: 0 20px;
+  }
+  
+  .footer-container a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  .footer-container a:hover {
+    color: #23527c;
+  }

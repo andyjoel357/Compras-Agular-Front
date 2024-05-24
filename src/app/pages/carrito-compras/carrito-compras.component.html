@@ -1,0 +1,30 @@
+<!-- <div style="background-image: url(https://img.freepik.com/vector-gratis/hipster-ropa-moda-doodle-patron_1284-6445.jpg)"> -->
+    <div class="container mt-3" >
+      <div class="row">
+          <div class="col-md-12" style="text-align: center; background-color: aliceblue;">
+              <h1>Productos</h1>
+          </div>
+          <div class="col-md-12 mt-3">
+              <div class="row" >
+                  @for (producto of productos; track producto) {
+                      <div class="col-md-4 col-xl-3">
+                          <div class="thumbnail img-container" style="background-color: aquamarine;">
+                            <a style="text-align: center;">
+                                <p><strong>{{producto.categoria}}</strong></p>
+                              </a>
+                              <div class="caption text-center">
+                                  <p><b>Nombre:</b> {{producto.nombre}}</p>
+                                  <p><b>Precio:</b> {{producto.precio}}</p>
+                                  <br>
+                                  <button class="btn btn-primary" (click)="agregar(producto)">Agregar</button>
+                                  <br>
+                                  <hr>
+                              </div>
+                          </div>
+                      </div>
+                  }
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- </div> -->

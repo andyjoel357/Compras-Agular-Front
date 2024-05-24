@@ -1,0 +1,29 @@
+<hr>
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <div style="background-color: aliceblue;">
+        <h1 class="text-center mb-3">Carrito de compras</h1>
+        </div>
+        <ul class="list-group mb-3">
+
+            <li class="list-group-item d-flex justify-content-between lh-condensed" *ngFor="let item of almacencarrito; let i = index">
+                <div>
+                    <h6 class="my-0">{{item.nombre}}</h6>
+                    <small class="text-muted">Precio: ${{item.precio}}</small>
+                </div>
+                <input class="text-muted" type="number" id="cantidad{{i}}" [(ngModel)]="cantidad[i]" (input)="calcular(i)">
+                <!-- <span class="text-muted">${{item.precio * cantidad}}</span> -->
+                <button class="btn btn-danger" (click)="eliminar(item.id)">Eliminar</button>
+            </li>
+        </ul>
+        <div class="d-flex justify-content-between" style="background-color: aliceblue;">
+            <div class="font-weight-bold">
+                <small>Subtotal:</small> ${{subtotal}} <br>
+                <small>IVA:</small> ${{iva}}
+            </div>
+            <div class="font-weight-bold">
+                <h5 id="cart-total">${{total}}</h5>
+            </div>
+        </div>
+    </div>
+</div>
